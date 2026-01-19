@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: text-mirror-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: text-mirror
+  template:
+    metadata:
+      labels:
+        app: text-mirror
+    spec:
+      containers:
+      - name: text-mirror
+        image: novoo/js-text-mirror:1 # We will fix this tag in a second
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80

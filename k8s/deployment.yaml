@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: text-mirror
-        image: novoo/js-text-mirror:1 # We will fix this tag in a second
+        image: novoo/js-text-mirror:2 # We will fix this tag in a second
         imagePullPolicy: Always
         ports:
         - containerPort: 80

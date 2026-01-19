@@ -1,4 +1,54 @@
-body{text-align:center;font-family:sans-serif}
-input{padding:8px}
-p{margin-top:10px;font-size:18px}
-h1{font-weight:600}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.container {
+  background: #020617;
+  padding: 32px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #1e293b;
+  background: #020617;
+  color: #e5e7eb;
+  outline: none;
+}
+
+input:focus {
+  border-color: #38bdf8;
+}
+
+.output {
+  margin-top: 18px;
+  min-height: 24px;
+  font-size: 16px;
+  color: #94a3b8;
+  transition: color 0.2s ease;
+}
+
